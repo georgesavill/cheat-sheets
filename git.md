@@ -1,4 +1,28 @@
 # Git cheat sheet
+## Create a new repository locally, and push to github
+
+Navigate to directory containing the repository to-be.
+
+```
+git init
+```
+```
+git add .
+```
+```
+git commit -m "Initial commit"
+```
+
+Go to github, create a new repository, and initialise it without a README. Then:
+
+```
+git remote add origin git@github.com:georgesavill/[REPO_NAME].git
+```
+```
+git push -u origin master
+```
+---
+
 ## Rename previous commit messages
 
 ```
