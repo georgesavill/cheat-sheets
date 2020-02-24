@@ -43,3 +43,26 @@ Where n is number of commits into the past to return. Then:
  ```
  git push --force
  ```
+---
+
+ ## Retrospectively create branch
+
+ ```
+ git branch [branch name]
+ ```
+ Find commit hash of the commit *before* you want the new branch to start (or use HEAD~n to count backwards).
+ ```
+ git reset --hard [commit before new branch]
+ ```
+ Remove the newly branched commits from master/whichever branch you wish to remove commits from.
+ ```
+ git push --force
+ ```
+ Switch to the new branch.
+ ```
+ git switch [branch name]
+ ```
+ And push it up.
+ ```
+ git push --set-upstream origin [branch name]
+ ```
