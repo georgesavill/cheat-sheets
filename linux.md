@@ -32,3 +32,5 @@ To recursively copy files, maintaining permissions, in "archive" mode, showing t
 ```
 rsync -ahr --progress [source] [destination]
 ```
+
+See [here](https://www.computerhope.com/unix/rsync.htm) for more info on rsync.
