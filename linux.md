@@ -38,6 +38,11 @@ See [here](https://www.computerhope.com/unix/rsync.htm) for more info on rsync.
 
 ---
 
+To add a new user:
+```
+sudo adduser [username]
+```
+
 To change user's password:
 ```
 sudo passwd [username]
