@@ -27,6 +27,7 @@ To check file sizes within the current directory:
 ```
 du -ha
 ```
+---
 
 To recursively copy files, maintaining permissions, in "archive" mode, showing transfer speed and progress per file:
 ```
@@ -34,3 +35,10 @@ rsync -ahr --progress [source] [destination]
 ```
 
 See [here](https://www.computerhope.com/unix/rsync.htm) for more info on rsync.
+
+---
+
+To change user's password:
+```
+sudo passwd [username]
+```
