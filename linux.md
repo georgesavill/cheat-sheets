@@ -42,3 +42,8 @@ To change user's password:
 ```
 sudo passwd [username]
 ```
+
+To add a group to a user:
+```
+sudo usermod -a -G [group] [user]
+```
