@@ -66,3 +66,22 @@ Where n is number of commits into the past to return. Then:
  ```
  git push --set-upstream origin [branch name]
  ```
+
+ ---
+
+ ## Delete the last x commits
+
+ Reset head, either by number:
+ ```
+git reset --hard HEAD~1
+ ```
+
+ or commit id:
+ ```
+ git reset --hard [COMMIT-ID]
+ ```
+
+ And then push:
+ ```
+ git push origin HEAD --force
+ ```
