@@ -52,3 +52,11 @@ To add a group to a user:
 ```
 sudo usermod -a -G [group] [user]
 ```
+
+---
+
+To add a shorthand alias for shell commands:
+
+```
+alias update="sudo apt update"
+```
