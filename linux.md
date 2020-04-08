@@ -70,3 +70,7 @@ sudo dd if=/dev/sda of=/dev/sdb bs=100M conv=notrunc status=progress
 
 ---
 
+Create a shortcut:
+```
+ln -s [target of shortcut] [name/path of shortcut]
+```
