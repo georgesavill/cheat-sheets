@@ -60,3 +60,13 @@ To add a shorthand alias for shell commands:
 ```
 alias update="sudo apt update"
 ```
+
+---
+
+Clone a drive:
+```
+sudo dd if=/dev/sda of=/dev/sdb bs=100M conv=notrunc status=progress
+```
+
+---
+
