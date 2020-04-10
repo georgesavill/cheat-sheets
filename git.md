@@ -1,5 +1,45 @@
 # Git cheat sheet
+
+## Setup new SSH key (linux)
+
+Generate a new SSH key:
+```
+ssh-keygen -t rsa -b 4096 -C "georgesavill"
+```
+
+Start the ssh agent:
+```
+eval "$(ssh-agent -s)"
+```
+
+And add the generated key:
+```
+ssh-add ~/.ssh/id_rsa
+```
+
+Install xclip (possible doesn't work on ubuntu server - in which case manually copy and paste):
+```
+sudo apt-get install xclip
+```
+
+Copy the SSH key:
+```
+xclip -sel clip < ~/.ssh/id_rsa.pub
+```
+
+Add the SSH key to github account, and test:
+```
+ssh -T git@github.com
+```
+
+
+
+
+
+---
+
 ## Create a new repository locally, and push to github
+
 
 Navigate to directory containing the repository to-be.
 
