@@ -55,6 +55,19 @@ sudo usermod -a -G [group] [user]
 
 ---
 
+To remove the sudo password prompt for a user:
+
+```
+sudo visudo
+```
+
+and add the following line:
+```
+george ALL=(ALL) NOPASSWD: ALL
+```
+
+---
+
 To add a shorthand alias for shell commands:
 
 ```
